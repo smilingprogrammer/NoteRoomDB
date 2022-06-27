@@ -19,7 +19,6 @@ class NoteAdapter: ListAdapter<NoteEntity, NoteAdapter.NoteViewHolder>(NoteDiffU
         override fun areContentsTheSame(oldItem: NoteEntity, newItem: NoteEntity): Boolean {
             return oldItem.id == newItem.id
         }
-
     }
 
     inner class NoteViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
